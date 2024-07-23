@@ -59,7 +59,7 @@ function RevokeOwnershipAction() {
         <Box ml={3} mt={-1} mb={-0.6} sx={{ alignSelf: "baseline", color: "#464646" }}>
           <Typography
             sx={{
-              color: "#161C28",
+              color: "#18D09A",
               fontWeight: 800,
               fontSize: 20,
               marginBottom: 3.2,

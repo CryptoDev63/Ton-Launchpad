@@ -48,6 +48,10 @@ export const Token = () => {
   } = useJettonStore();
   const [openEdit, setOpenEdit] = useState(false);
 
+  console.log("pooh, isAdmin = ", isAdmin)
+  console.log("pooh, adminRevokedOwnership = ", adminRevokedOwnership)
+  console.log("pooh, jettonLoading = ", jettonLoading)
+
   return (
     <StyledBlock sx={{ width: "calc(55% - 15px)" }}>
       {!openEdit ? (
@@ -68,7 +72,7 @@ export const Token = () => {
                     variant="h2"
                     fontWeight={800}
                     fontSize={20}
-                    color="#161C28"
+                    color="#18D09A"
                   />
                 )}
               </LoadingContainer>
@@ -81,7 +85,7 @@ export const Token = () => {
                       variant="h4"
                       fontWeight={500}
                       fontSize={16}
-                      color="#728A96"
+                      color="#18D09A"
                     />
                   </Box>
                 </Tooltip>
@@ -96,7 +100,7 @@ export const Token = () => {
                       alt="Pen Icon"
                       width={15}
                       height={15}
-                      style={{ marginRight: 4 }}
+                      style={{ marginRight: 4, color: "#18D09A" }}
                     />
                     Edit token
                   </CenteringWrapper>

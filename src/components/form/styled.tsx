@@ -24,7 +24,7 @@ const StyledActionBtn = styled(Box)({
 });
 
 const JettonFormTitle = styled(Typography)({
-  color: "#161C28",
+  color: "#18D09A",
   fontSize: 20,
   fontWeight: 800,
   marginBottom: 0.5,
@@ -34,4 +34,12 @@ const JettonFormTitle = styled(Typography)({
   maxWidth: 300,
 });
 
-export { StyledForm, StyledFormInputs, StyledActionBtn, JettonFormTitle };
+const BoxWithMobile = styled(Box)(({ theme }) => ({
+  display: 'flex',
+
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: 'column'  
+  },
+}))
+
+export { StyledForm, StyledFormInputs, StyledActionBtn, JettonFormTitle, BoxWithMobile };

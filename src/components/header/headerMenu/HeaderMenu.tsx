@@ -42,11 +42,13 @@ const HeaderMenu: React.FC<MenuProps> = (props) => {
 
 const StyledTonConnectButton = styled(TonConnectButton)(({ theme }) => ({
   button: {
-    background: theme.palette.primary.main,
-    "*": { color: "white" },
+    background: "#18D09A40",
+    borderRadius: "10px",
+    border: "1px solid #18D09A",
+    "*": { color: theme.palette.primary.main },
     svg: {
       "*": {
-        stroke: "white",
+        stroke: theme.palette.primary.main,
       },
     },
   },

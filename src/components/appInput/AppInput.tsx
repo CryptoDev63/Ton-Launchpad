@@ -3,9 +3,10 @@ import NumberFormat from "react-number-format";
 
 const InputWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
+  color: "#18D09A",
   "& .MuiTextField-root": {
     "& .MuiInputLabel-root": {
-      color: "#7A828A",
+      color: "#18D09A",
       fontSize: 16,
       "&.Mui-focused": {
         color: theme.palette.primary.main,
@@ -15,16 +16,18 @@ const InputWrapper = styled(Box)(({ theme }) => ({
       fontSize: 16,
     },
   },
+  borderRadius: 10
 }));
 
 interface InputProps {
-  showLabel?: boolean;
+  show?: boolean;
 }
 
 const TextInput = styled(TextField)((props: InputProps) => ({ theme }) => ({
-  background: "#F7F9FB",
-  borderRadius: 40,
-  border: "none",
+  background: "transparent",
+  borderRadius: 10,
+  border: "1px solid #18D09A",
+
   paddingLeft: theme.spacing(1),
   "& fieldset": {
     border: "none",
@@ -34,7 +37,7 @@ const TextInput = styled(TextField)((props: InputProps) => ({ theme }) => ({
     marginLeft: 15,
   },
   "& label": {
-    display: props.showLabel ? "inline" : "none",
+    display: props.show ? "inline" : "none",
     marginLeft: theme.spacing(0.8),
     "&.Mui-focused": {
       display: "none",
@@ -57,7 +60,7 @@ export const AppTextInput: React.FC<AppInputProps> = ({ fullWidth, value, label,
         label={label}
         value={value}
         onChange={onChange}
-        showLabel={!value}
+        show={!value}
       />
     </InputWrapper>
   );
@@ -76,10 +79,11 @@ export const AppNumberInput: React.FC<AppNumberInputProps> = ({ value, label, on
     <InputWrapper>
       <NumberFormat
         sx={{
-          background: "#F7F9FB",
-          borderRadius: 40,
+          background: "transparent",
+          borderRadius: "10px",
           paddingLeft: 1,
-          border: "none",
+          border: "1px solid #18D09A",
+          color: "#18D09A",
           "& fieldset": {
             border: "none",
             background: "none",

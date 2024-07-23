@@ -40,6 +40,8 @@ export function Popup({
           padding: 0,
           overflow: "unset",
           margin: 20,
+          background: '#232323',
+          border: '1px solid #18D09A'
         },
       }}
       BackdropProps={{

@@ -30,7 +30,8 @@ const StyledCategoryFields = styled(Box)({
 });
 
 const StyledBlock = styled(StyledCategory)({
-  background: "#FFFFFF",
+  background: "#232323",
+  backgroundImage: "url(../images/pattern-stack.png)",
   border: "0.5px solid rgba(114, 138, 150, 0.24)",
   borderRadius: 24,
   filter: "drop-shadow(0px 2px 16px rgba(114, 138, 150, 0.08))",

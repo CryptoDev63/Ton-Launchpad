@@ -39,11 +39,11 @@ const StyledDescription = styled(Box)(({ theme }) => ({
 
 const ScreenHeading = styled(Typography)(({ theme }) => ({
   fontWeight: 800,
-  color: "#161C28",
+  color: "#18D09A",
   fontSize: 44,
+  textAlign: "center",
   [theme.breakpoints.down("md")]: {
     fontSize: 28,
-    textAlign: "center",
   },
   [theme.breakpoints.down("sm")]: {
     marginTop: theme.spacing(8),
@@ -61,15 +61,16 @@ const FormWrapper = styled(Box)(({ theme }) => ({
 
 const SubHeadingWrapper = styled(Box)(({ theme }) => ({
   flex: 5,
-  background: "#FFFFFF",
+  background: "#232323",
   border: "0.5px solid rgba(114, 138, 150, 0.24)",
   boxShadow: "0px 2px 16px rgba(114, 138, 150, 0.08)",
   borderRadius: "24px",
   padding: theme.spacing(3),
+  backgroundImage: "url(../images/pattern-stack.png)",
 }));
 
 const FormHeading = styled(Typography)(({ theme }) => ({
-  color: "#161C28",
+  color: "#18D09A",
   fontSize: 20,
   fontWeight: 800,
   marginBottom: theme.spacing(3),

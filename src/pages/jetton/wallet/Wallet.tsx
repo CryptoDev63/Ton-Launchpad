@@ -25,7 +25,7 @@ export const Wallet = () => {
         fontWeight={800}
         fontSize={20}
         marginBottom={20}
-        color="#161C28"
+        color="#18D09A"
       />
       <StyledCategoryFields>
         <DataRow

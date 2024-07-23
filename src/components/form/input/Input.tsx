@@ -97,21 +97,6 @@ export function Input({
       />
       <FieldDescription zeroPadding={zeroPadding}>
         {description}
-        {!disabled && !disableExample && (
-          <Typography
-            sx={{
-              display: "inline",
-              fontWeight: 800,
-              "&:hover": {
-                cursor: "pointer",
-              },
-            }}
-            variant="body2"
-            onClick={() => onExampleClick()}>
-            {" "}
-            example
-          </Typography>
-        )}
       </FieldDescription>
     </StyledContainer>
   );

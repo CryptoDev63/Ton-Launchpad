@@ -3,8 +3,8 @@ import { Box } from "@mui/system";
 import { APP_GRID } from "consts";
 
 const HeaderWrapper = styled(AppBar)(({ theme }) => ({
-  height: 200,
-  background: "white",
+  height: 80,
+  background: "#232323",
   border: "0.5px solid rgba(114, 138, 150, 0.24)",
   boxShadow: "0px 2px 16px rgba(114, 138, 150, 0.08)",
   borderRadius: "0px 0px 48px 48px",
@@ -16,7 +16,7 @@ const HeaderWrapper = styled(AppBar)(({ theme }) => ({
     zIndex: 99,
     position: "fixed",
     left: 0,
-    background: "white",
+    background: "#232323",
   },
 }));
 

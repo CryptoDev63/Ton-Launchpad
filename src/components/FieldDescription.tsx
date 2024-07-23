@@ -11,7 +11,7 @@ interface Props {
 function FieldDescription({ children, zeroPadding }: Props) {
   return (
     <Typography
-      style={{ fontSize: 14, marginTop: 5, opacity: 0.3, paddingLeft: zeroPadding ? 0 : 18 }}>
+      style={{ fontSize: 14, marginTop: 5, paddingLeft: zeroPadding ? 0 : 18 }}>
       {children}
     </Typography>
   );

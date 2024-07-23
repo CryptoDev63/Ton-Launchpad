@@ -112,7 +112,7 @@ function DeployerPage() {
         <Fade in>
           <Box>
             <Box mb={3} mt={3.75}>
-              <ScreenHeading variant="h5">Mint your token</ScreenHeading>
+              <ScreenHeading variant="h5">Create your Jetton</ScreenHeading>
             </Box>
             <FormWrapper>
               <SubHeadingWrapper>

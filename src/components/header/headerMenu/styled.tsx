@@ -1,7 +1,7 @@
 import { Box, IconButton, styled, Typography } from "@mui/material";
 
 const CloseMenuButton = styled(IconButton)({
-  color: "#50A7EA",
+  color: "#18D09A",
   position: "absolute",
   right: 10,
   top: 10,
@@ -11,7 +11,9 @@ const DrawerContent = styled(Box)(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  marginTop: 60,
+  paddingTop: 60,
+  height: "100vh",
+  background: "#232323",
   "& .logo": {
     flexDirection: "column",
   },

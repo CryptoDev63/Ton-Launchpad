@@ -38,11 +38,11 @@ const RowActionsButton = styled(Box)({
     padding: "0px 10px",
     fontSize: 13,
     fontWeight: 700,
-    background: "#0088CC",
+    background: "#18D09AE0",
     color: "#fff",
-    borderRadius: 24,
+    borderRadius: 10,
     "&:hover": {
-      background: "rgb(0, 95, 142)",
+      background: "#18D09A",
     },
   },
 });
@@ -53,8 +53,8 @@ const RowValueDisplayer = styled(Box)({
   alignItems: "center",
   justifyContent: "space-between",
   padding: "0px 5px 0px 20px",
-  background: "#F7F9FB",
-  borderRadius: 40,
+  border: "1px solid #18D09A",
+  borderRadius: 10,
 });
 
 const RowTitle = styled(Typography)(({ theme }) => ({
@@ -62,6 +62,7 @@ const RowTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 500,
   marginBottom: theme.spacing(1),
   marginLeft: theme.spacing(2.5),
+  color: "#18D09A",
 }));
 
 const RowContent = styled(Box)(({ theme }) => ({

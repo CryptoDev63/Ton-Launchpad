@@ -27,7 +27,7 @@ const StyledLink = styled("div")({
   overflow: "hidden",
   textOverflow: "ellipsis",
   width: "95%",
-  color: "#0688CC!important",
+  color: "#18D09A",
   [theme.breakpoints.down("sm")]: {
     fontSize: 14,
   },

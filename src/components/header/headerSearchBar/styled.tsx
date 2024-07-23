@@ -12,9 +12,9 @@ const SearchBarWrapper = styled(Box)(({ theme }) => ({
   minHeight: 50,
   height: "100%",
   transition: "0.1s all",
-  background: "#F7F9FB",
-  border: "0.5px solid rgba(114, 138, 150, 0.16)",
-  borderRadius: 40,
+  border: "1px solid #18D09A",
+  borderRadius: 10,
+  background: "#232323",
   [theme.breakpoints.down("md")]: {
     height: 40,
   },
@@ -28,12 +28,12 @@ const SearchBarInput = styled("input")(({ theme }) => ({
   fontWeight: 500,
   outline: "unset",
   fontFamily: "Mulish",
-  color: "#000",
+  color: "#18D09A",
   border: "none",
-  background: "#F7F9FB",
-  caretColor: "#728A96",
+  background: "#232323",
+  caretColor: "#18D09A",
   "&::placeholder": {
-    color: "#728A96",
+    color: "#18D09A",
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: 16,
@@ -48,15 +48,15 @@ const SearchResultsWrapper = styled(Box)(({ theme }) => ({
   padding: `${theme.spacing(1)}, ${theme.spacing(2)}`,
   zIndex: 99,
 
-  background: "rgba(232,233,235)",
-  border: "0.5px solid rgba(114, 138, 150, 0.16)",
-  borderRadius: 16,
+  background: "#232323",
+  border: "1px solid #18D09A",
+  borderRadius: 10,
   width: "100%",
   maxHeight: 450,
   overflowY: "auto",
 
   [theme.breakpoints.down("md")]: {
-    display: "none",
+    // display: "none",
   },
 }));
 
@@ -71,14 +71,14 @@ const SearchResultsItem = styled(Box)(() => ({
   justifyContent: "space-between",
   background: "transparent",
   fontSize: 20,
-  color: "#000",
+  color: "#18D09A",
   fontWeight: 500,
   height: 30,
   padding: "20px 24px 20px 30px",
   transitionDuration: ".15s",
   "&:hover": {
     cursor: "pointer",
-    background: "rgb(225,227,230)",
+    scale: "1.01",
   },
 }));
 

@@ -24,8 +24,8 @@ const StyledButton = styled(LoadingButton)((props: StyledButtonProps) => ({
   fontSize: props.fontSize || 14,
   boxShadow: "none",
   fontWeight: props.fontWeight || 600,
-  borderRadius: 40,
-  border: props.transparent ? "1px solid #50A7EA" : "",
+  borderRadius: 10,
+  border: props.transparent ? "1px solid #18D09A" : "",
   background: props.background || "",
   whiteSpace: "nowrap",
   "& img": {

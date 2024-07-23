@@ -6,17 +6,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f7f9fb !important;
   height: 100vh;
+
+  background-image: url(../public/images/Background_Dark.png);
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #434343;
+
+  color: white;
 }
 
 @media screen and (max-height: 850px) {
   body {
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: smooth;
   }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+button svg {
+  color: white;
 }
 
 .MuiTooltip-tooltip {
