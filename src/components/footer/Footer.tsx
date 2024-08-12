@@ -39,8 +39,8 @@ export const Footer = () => {
             <FooterLink
               sx={{ color: "#5E75E8", display: "flex", alignItems: "center" }}
               target="_blank"
-              href="https://www.fiverr.com/dereck_elio?up_rollout=true">
-              Dereck
+              href="cryptodev9663@gmail.com">
+              CryptoDev
             </FooterLink>
           </Typography>
         </ContributedWrapper>
